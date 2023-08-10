@@ -1,0 +1,17 @@
+button{
+    width: 100px;
+    height: 100px;
+}
+
+.btn-secondary{
+    background-image: linear-gradient(to bottom right, rgb(255, 129, 200), rgb(253, 188, 199));
+    border: none;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background-image: linear-gradient(to bottom right, rgb(255, 69, 175), rgb(250, 97, 123));
+        background-color: var(--bs-btn-hover-bg);
+      }
+}
+

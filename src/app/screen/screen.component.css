@@ -1,0 +1,12 @@
+.lock{
+    font-size: 60px;
+}
+
+.spaced-dots-container{
+    padding: 10px;
+    border-radius: 30px;
+    background: #ffdfe9;
+    font-size: 30px;
+    width: 300px;
+    color: rgb(253, 103, 166);
+}
