@@ -9,6 +9,8 @@ import { PinComponent } from '../pin/pin.component';
 export class ScreenComponent {
   @ViewChild(PinComponent) pinComponent!: PinComponent;
 
+  lock = true;
+
   hiddenPassword = ['○','○','○','○'];
 
   receivedPassword: number[] = [];
@@ -31,7 +33,16 @@ export class ScreenComponent {
     console.log(this.hiddenPassword)
   }
 
+  setLock(locked:boolean){
+    this.lock = locked;
+    this.checkLock();
+  }
 
+  checkLock(){
+    if(this.lock == true){
+      this.hiddenPassword = ['○','○','○','○'];
+    }
+  }
 
 
 }
