@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { PinComponent } from '../pin/pin.component';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-screen',
@@ -41,6 +42,12 @@ export class ScreenComponent {
   checkLock(){
     if(this.lock == true){
       this.hiddenPassword = ['○','○','○','○'];
+    }else{
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
     }
   }
 
