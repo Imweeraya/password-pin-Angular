@@ -43,11 +43,7 @@ export class ScreenComponent {
     if(this.lock == true){
       this.hiddenPassword = ['○','○','○','○'];
     }else{
-      Swal.fire(
-        'Good job!',
-        'You clicked the button!',
-        'success'
-      )
+     
     }
   }
 
